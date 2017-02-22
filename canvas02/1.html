@@ -16,7 +16,7 @@
 	img.src="human.jpg";
 	//加载
 	img.onload=function(){
-		var beginx=0,beginy=0;//裁减图片的X轴坐标。从左往右递增的。
+		var beginx=1,beginy=1;//裁减图片的X轴坐标。从左往右递增的。
 		setInterval(function(){
 			context.clearRect(0, 0, mycanvas.width, mycanvas.height);
 			//100毫秒裁减一次图片绘制在页面上。
