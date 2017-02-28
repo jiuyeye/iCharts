@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+<title>canvas学习</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<style>
+.items {
+  width: 280px;
+  height: 150px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius:10px;
+  background-size: cover;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  background-repeat: no-repeat;
+  -webkit-animation: slider 15s linear infinite alternate;
+  animation: slider 15s linear infinite alternate;
+   -webkit-transform-origin: center center;
+   transform-origin: center center;
+}
+@-webkit-keyframes slider {
+  0% {
+    background-image: url(1.png);
+  }
+ 25% {
+   background-image: url(2.png) ;
+  }
+  50% {
+    background-image: url(3.png) ;
+  }
+  75% {
+    background-image: url(4.png);
+  }
+  100% {
+    background-image: url(5.png);
+}
+}
+@keyframes slider {
+  0% {
+    background-image: url(1.png) ;
+            }
+  25% {
+     background-image: url(2.png) ;
+            }
+  50% {
+    background-image: url(3.png) ;
+            }
+  75% {
+     background-image: url(4.png);
+  }
+  100% {
+    background-image: url(5.png);
+  }
+}
+</style>
+</head>
+<body>
+<div class="slider">
+   <div class="items"></div>
+</div>
+</body>
+</html>
